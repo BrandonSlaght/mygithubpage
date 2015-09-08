@@ -4,6 +4,10 @@ body {
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.row{
+  margin: 0;
+}
+
 .banner {
   background-image: url('../images/home-banner.JPG');
   background-attachment: fixed;
@@ -24,5 +28,121 @@ body {
   justify-content:center;
 }
 .darken>h1{
-  color: #eeeeee
+  color: #eee;
+}
+
+
+.btn-github{
+  background-color: #333;
+  border-color: #555;
+  position:relative;
+  overflow:hidden;
+  width: 105px;
+  height: 45px;
+}
+.btn-github:active, .btn-github:focus, .btn-github:hover{
+  background-color: #111;
+  border-color: #666;
+}
+.btn-github>a{
+  color: #fff;
+  height:100%;
+  width:100%;
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+.btn-github>a:hover {
+  text-decoration: none;
+  color:#eee;
+}
+
+.btn-linkedin{
+  background-color: #0077b5;
+  border-color: #005e93;
+  position:relative;
+  overflow:hidden;
+  width: 105px;
+  height: 45px;
+}
+.btn-linkedin:active, .btn-linkedin:focus, .btn-linkedin:hover{
+  background-color: #005e93;
+  border-color: #004471;
+}
+.btn-linkedin>a{
+  color: #fff;
+  height:100%;
+  width:100%;
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+.btn-linkedin>a:hover {
+  text-decoration: none;
+  color:#eee;
+}
+
+
+.fuck {
+  padding-top: 9px;
+}
+.right {
+  margin-right: 0;
+  margin-left: auto;
+}
+.container-fluid {
+  max-width: 1000px;
+}
+footer {
+  margin-top: 20px;
+  background-color: #ddd;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer>p {
+  margin: 0;
+}
+header {
+  box-shadow: 0px 0px 10px #000;
+}
+hr {
+  border: 0;
+  height: 2px;
+  background: -webkit-linear-gradient(left, #fff 0%,#eee 50%,#fff 100%);
+  background: -moz-linear-gradient(left, #fff 0%,#eee 50%,#fff 100%);
+  background: -ms-linear-gradient(left, #fff 0%,#eee 50%,#fff 100%);
+  background: -o-linear-gradient(left, #fff 0%,#eee 50%,#fff 100%);
+  background: linear-gradient(left, #fff 0%,#eee 50%,#fff 100%);
+}
+
+.box {  
+  max-width:300px;
+  max-height:200px;
+  box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+  border-bottom:2px solid #fff;
+  border-right:2px solid #fff; 
+  background:url(http://ianfarb.com/wp-content/uploads/2013/10/nicholas-hodag.jpg);
+  background-size:cover;
+  background-position: center center;
+  border-radius:5px;
+  overflow:hidden;
+}
+
+.overlay {  
+  background:rgba(0,0,0,.75);
+  text-align:center;
+  padding:45px 0 66px 0;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;}
+
+.box:hover .overlay {
+  opacity:1;
+}
+
+.plus {  
+  font-family:Helvetica;
+  font-weight:900;
+  color:rgba(255,255,255,.85);
+  font-size:96px;
 }
