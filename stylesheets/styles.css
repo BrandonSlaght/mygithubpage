@@ -5,7 +5,7 @@ body {
 }
 
 .banner {
-  background-image: url('../images/home-banner.jpg');
+  background-image: url('/images/home-banner.jpg');
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
