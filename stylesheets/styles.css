@@ -24,6 +24,10 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -moz-box-direction: column;
+  -ms-flexbox-direction: column;
+  -webkit-flex-direction: column;
   flex-direction: column;
   justify-content:center;
 }
@@ -130,6 +134,7 @@ hr {
   background:url(../images/BI.png);
   background-size:cover;
   background-position: center center;
+
 }
 
 #poly {
@@ -155,6 +160,7 @@ hr {
   opacity:0;
   -webkit-transition: opacity .25s ease;
   -moz-transition: opacity .25s ease;
+  transition: opacity .25s ease;
   height: 100%;
 }
 
@@ -228,4 +234,24 @@ a:active {
 }
 .link:active {
   color:#888;
+}
+
+.come-in {
+  transform: translateY(50px);
+  animation: come-in 0.8s ease forwards, opacity 2s ease-in;
+}
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+img {
+  opacity:0;
+  -moz-transition: opacity 1s; /* Firefox 4 */
+  -webkit-transition: opacity 1s; /* Safari and Chrome */
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+@media (max-width: 768px) {
+  ul {
+    margin-bottom:0; 
+  }
 }
