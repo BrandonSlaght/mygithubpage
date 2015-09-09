@@ -126,6 +126,8 @@ hr {
   background-position: center center;
   border-radius:5px;
   overflow:hidden;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .overlay {  
