@@ -125,16 +125,16 @@
     <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript">
       console.log("test");
-      // $("#logo").bind("load", function () { 
-      //   console.log("test1");
-      //   $(this).hide().fadeIn(); 
-      // });
-      $('img').each( function(){
-        $(this).on('load', function () {
-          $(this).hide().fadeIn();
-          alert("test 2");
-        });
+      $('img').load(function (event) { 
+        $(event.target).fadeIn(); 
+        console.log("test 2");
       });
+      // $('img').each( function(){
+      //   $(this).on('load', function () {
+      //     $(this).hide().fadeIn();
+      //     console.log("test 2");
+      //   });
+      // });
     </script>
   </body>
 </html>
