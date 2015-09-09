@@ -129,11 +129,19 @@ hr {
 #bi {
   background:url(../images/BI.png);
   background-size:cover;
+  background-position: center center;
 }
 
 #poly {
   background:url(../images/collage.png);
   background-size:cover;
+  background-position: center center;
+}
+
+#bad {
+  background:url(../images/bad.png);
+  background-size:cover;
+  background-position: center center;
 }
 
 .img-container {
@@ -200,4 +208,24 @@ a:active {
 }
 .mail:active {
   color:#bbb;
+}
+.img-circle {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.link {
+  color: #999;
+}
+.link:hover {
+  color:#777;
+}
+.link:visited {
+  color:#888;
+}
+.link:link {
+  color:#888;
+}
+.link:active {
+  color:#888;
 }
