@@ -53,7 +53,6 @@ body {
   top:0px;
 }
 .btn-github>a:hover {
-  text-decoration: none;
   color:#eee;
 }
 
@@ -78,7 +77,6 @@ body {
   top:0px;
 }
 .btn-linkedin>a:hover {
-  text-decoration: none;
   color:#eee;
 }
 
@@ -108,26 +106,34 @@ header {
 hr {
   border: 0;
   height: 2px;
-  background: -webkit-linear-gradient(left, #fff 0%,#eee 50%,#fff 100%);
-  background: -moz-linear-gradient(left, #fff 0%,#eee 50%,#fff 100%);
-  background: -ms-linear-gradient(left, #fff 0%,#eee 50%,#fff 100%);
-  background: -o-linear-gradient(left, #fff 0%,#eee 50%,#fff 100%);
-  background: linear-gradient(left, #fff 0%,#eee 50%,#fff 100%);
+  background: -webkit-linear-gradient(left, #fff 0%,#ccc 50%,#fff 100%);
+  background: -moz-linear-gradient(left, #fff 0%,#ccc 50%,#fff 100%);
+  background: -ms-linear-gradient(left, #fff 0%,#ccc 50%,#fff 100%);
+  background: -o-linear-gradient(left, #fff 0%,#ccc 50%,#fff 100%);
+  background: linear-gradient(left, #fff 0%,#ccc 50%,#fff 100%);
 }
 
 .box {  
   max-width:300px;
-  max-height:200px;
+  height:200px;
   box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
   border-bottom:2px solid #fff;
   border-right:2px solid #fff; 
-  background:url(http://ianfarb.com/wp-content/uploads/2013/10/nicholas-hodag.jpg);
-  background-size:cover;
   background-position: center center;
   border-radius:5px;
   overflow:hidden;
   margin-left:auto;
   margin-right:auto;
+}
+
+#bi {
+  background:url(../images/BI.png);
+  background-size:contain;
+}
+
+#poly {
+  background:url(../images/Collage.png);
+  background-size:cover;
 }
 
 .img-container {
@@ -138,10 +144,11 @@ hr {
 .overlay {  
   background:rgba(0,0,0,.75);
   text-align:center;
-  padding:45px 0 66px 0;
   opacity:0;
   -webkit-transition: opacity .25s ease;
-  -moz-transition: opacity .25s ease;}
+  -moz-transition: opacity .25s ease;
+  height: 100%;
+}
 
 .box:hover .overlay {
   opacity:1;
@@ -150,6 +157,47 @@ hr {
 .plus {  
   font-family:Helvetica;
   font-weight:900;
-  color:rgba(255,255,255,.85);
-  font-size:96px;
+  font-size:67px;
+}
+
+#poly>div>span>a {
+  font-size: 56px;
+  top: -10px;
+  position: relative;
+}
+
+.plus>a:hover {
+  color:#eee;
+}
+.plus>a {
+  color:#fff;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+.mail {
+  color:#fff;
+}
+.mail:hover {
+  color:#bbb;
+}
+.mail:visited {
+  color:#bbb;
+}
+.mail:link {
+  color:#fff;
+}
+.mail:active {
+  color:#bbb;
 }
