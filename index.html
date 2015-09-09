@@ -18,7 +18,7 @@
     <header>
       <div class = "banner">
         <div class = "darken">
-          <img src="./images/me.jpg" alt="..." class="img-circle">
+          <img src="./images/me.jpg" alt="..." class="img-circle" id="logo">
           <h1 class="text-center hero-text">Brandon Slaght</h1>
           <p class="text-center">
             <a href="mailto:bslaght@rochester.edu" class="mail">bslaght@rochester.edu</a>
@@ -123,5 +123,18 @@
       <p class="text-center">&copy; Brandon Slaght</p>
     </footer>
     <script src="javascripts/scale.fix.js"></script>
+    <script type="text/javascript">
+      console.log("test");
+      // $("#logo").bind("load", function () { 
+      //   console.log("test1");
+      //   $(this).hide().fadeIn(); 
+      // });
+      $('img').each( function(){
+        $(this).on('load', function () {
+          $(this).hide().fadeIn();
+          alert("test 2");
+        });
+      });
+    </script>
   </body>
 </html>
