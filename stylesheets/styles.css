@@ -281,5 +281,6 @@ img {
   padding-top: 15px;
 }
 iframe {
-  margin-top: 25px;
+  margin: 25px auto;
+  display: block;
 }
