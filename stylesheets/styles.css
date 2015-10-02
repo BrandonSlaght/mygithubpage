@@ -280,23 +280,6 @@ img {
 .navbar-nav>li>a {
   padding-top: 15px;
 }
-/*.navbar-default {
-  background-color: transparent;
-  border-color: rgba(0,0,0,0);
-  border: none;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,131313+100&amp;1+0,0+100 */
-/*  background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(19,19,19,0) 100%); /* FF3.6+ 
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(100%,rgba(19,19,19,0))); /* Chrome,Safari4+ 
-  background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(19,19,19,0) 100%); /* Chrome10+,Safari5.1+ 
-  background: -o-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(19,19,19,0) 100%); /* Opera 11.10+ 
-  background: -ms-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(19,19,19,0) 100%); /* IE10+ 
-  background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(0,0,0,0) 100%); /* W3C 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#00131313',GradientType=0 ); /* IE6-9 
+iframe {
+  margin-top: 25px;
 }
-.navbar-default .navbar-nav>li>a{
-  color: #ddd;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #333;
-  color: #ddd;
-}*/
