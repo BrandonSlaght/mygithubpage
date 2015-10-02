@@ -1,19 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:20px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 50px;
 }
-
 .row{
   margin: 0;
 }
-
-.banner {
+#blog {
+  background-image: url('../images/code.jpeg');
+  height: 300px; 
+}
+#resume {
+  background-image: url('../images/desk.jpg');
+  height: 300px; 
+  background-position: 50% 700px;
+}
+#home {
   background-image: url('../images/home-banner.JPG');
+  height: 500px; 
+}
+.banner {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  height: 500px; 
 }
 .darken {
   background-color: rgba(0,0,0,.5);
@@ -31,11 +41,9 @@ body {
   flex-direction: column;
   justify-content:center;
 }
-.darken>h1{
+.darken>h1, .darken>h3{
   color: #eee;
 }
-
-
 .btn-github{
   background-color: #333;
   border-color: #555;
@@ -255,3 +263,40 @@ img {
     margin-bottom:0; 
   }
 }
+.navbar-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content:center;
+  float: none;
+  margin: 0px !important;
+}
+.navbar-brand {
+  margin-left: 0px !important;
+  font-size: 24px;
+}
+.navbar-nav>li>a {
+  padding-top: 15px;
+}
+/*.navbar-default {
+  background-color: transparent;
+  border-color: rgba(0,0,0,0);
+  border: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,131313+100&amp;1+0,0+100 */
+/*  background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(19,19,19,0) 100%); /* FF3.6+ 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(100%,rgba(19,19,19,0))); /* Chrome,Safari4+ 
+  background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(19,19,19,0) 100%); /* Chrome10+,Safari5.1+ 
+  background: -o-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(19,19,19,0) 100%); /* Opera 11.10+ 
+  background: -ms-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(19,19,19,0) 100%); /* IE10+ 
+  background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(0,0,0,0) 100%); /* W3C 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#00131313',GradientType=0 ); /* IE6-9 
+}
+.navbar-default .navbar-nav>li>a{
+  color: #ddd;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #333;
+  color: #ddd;
+}*/

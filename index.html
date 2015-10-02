@@ -8,32 +8,44 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Brandon Slaght</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.bootstrap-autohidingnavbar.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
     <header>
-      <div class = "banner">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="#" class="navbar-brand">Brandon Slaght</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class = "banner" id="home">
         <div class = "darken">
           <img onload="this.style.opacity='1';" src="./images/me.jpg" alt="..." class="img-circle" id="logo">
           <h1 class="text-center hero-text">Brandon Slaght</h1>
@@ -112,26 +124,26 @@
         <h2 class="text-center">Skills</h2>
         <div class="col-sm-2 col-sm-offset-3">
           <ul>
-            <li>HTML5/CSS3</li>
-            <li>Bootstrap</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>            
+            <li>Foundation</li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <ul>
+            <li>ASP.NET</li>
             <li>PHP</li>
             <li>SQL</li>
+            <li>jQuery</li>
           </ul>
         </div>
         <div class="col-sm-2">
           <ul>
             <li>Java</li>
-            <li>C/C++</li>
-            <li>ASP.NET</li>
+            <li>C</li>
+            <li>C++</li>
             <li>C#</li>
-          </ul>
-        </div>
-        <div class="col-sm-2">
-          <ul>
-            <li>Android</li>
-            <li>Weightlifting</li>
-            <li>Eating Butt</li>
-            <li>Bullshitting</li>
           </ul>
         </div>
       </div>
@@ -141,71 +153,7 @@
     </footer>
     <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript">
-      // console.log("test");
-      // $('img').load( function (event) { 
-      //   $(event.target).hide().fadeIn(); 
-      //   console.log("test 2");
-      // });
-      // $('img').each( function(){
-      //   $(this).on('load', function () {
-      //     $(this).hide().fadeIn();
-      //     console.log("test 2");
-      //   });
-      // });
-    </script>
-    <script type="text/javascript">
-
-      (function($) {
-
-        /**
-         * Copyright 2012, Digital Fusion
-         * Licensed under the MIT license.
-         * http://teamdf.com/jquery-plugins/license/
-         *
-         * @author Sam Sehnert
-         * @desc A small plugin that checks whether elements are within
-         *     the user visible viewport of a web browser.
-         *     only accounts for vertical position, not horizontal.
-         */
-
-        $.fn.visible = function(partial) {
-          
-            var $t            = $(this),
-                $w            = $(window),
-                viewTop       = $w.scrollTop(),
-                viewBottom    = viewTop + $w.height(),
-                _top          = $t.offset().top,
-                _bottom       = _top + $t.height(),
-                compareTop    = partial === true ? _bottom : _top,
-                compareBottom = partial === true ? _top : _bottom;
-          
-          return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-        };
-          
-      })(jQuery);
-
-      var win = $(window);
-      var allMods = $(".animate");
-
-      // Already visible modules
-      allMods.each(function(i, el) {
-        var el = $(el);
-        if (el.visible(true)) {
-          el.addClass("already-visible"); 
-        } 
-      });
-
-      win.scroll(function(event) {
-        
-        allMods.each(function(i, el) {
-          var el = $(el);
-          if (el.visible(true)) {
-            el.addClass("come-in"); 
-          } 
-        });
-        
-      });
+      $(".navbar-fixed-top").autoHidingNavbar();
     </script>
   </body>
 </html>
