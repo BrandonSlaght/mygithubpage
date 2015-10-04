@@ -52,13 +52,22 @@
         </div>
       </div>
     </header>
-    <iframe src="http://docs.google.com/viewer?url=http://www.brandonslaght.me/res/resume.pdf&embedded=true" style="width:800px; height:1200px;" frameborder="0"></iframe>
+    <iframe src="http://docs.google.com/viewer?url=http://www.brandonslaght.me/res/resume.pdf&embedded=true" frameborder="0" id="resumeframe"></iframe>
+    <a href="./res/resume.pdf" download>
+      <span class="glyphicon glyphicon-download-alt"> Download</span>
+    </a>
     <footer>
       <p class="text-center">&copy; Brandon Slaght</p>
     </footer>
     <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript">
       $(".navbar-fixed-top").autoHidingNavbar();
+    </script>
+    <script type="text/javascript">
+      $(window).bind("load resize",function(e){
+        var w = $('#resumeframe').width();
+        $('#resumeframe').css({'height' : w*(103/80)});
+      });
     </script>
   </body>
 </html>

@@ -67,7 +67,6 @@ body {
 .btn-github>a:hover {
   color:#eee;
 }
-
 .btn-linkedin{
   background-color: #0077b5;
   border-color: #005e93;
@@ -91,8 +90,6 @@ body {
 .btn-linkedin>a:hover {
   color:#eee;
 }
-
-
 .fuck {
   padding-top: 9px;
 }
@@ -124,7 +121,6 @@ hr {
   background: -o-linear-gradient(left, #fff 0%,#ccc 50%,#fff 100%);
   background: linear-gradient(left, #fff 0%,#ccc 50%,#fff 100%);
 }
-
 .box {  
   max-width:300px;
   height:200px;
@@ -137,31 +133,26 @@ hr {
   margin-left:auto;
   margin-right:auto;
 }
-
 #bi {
   background:url(../images/BI.png);
   background-size:cover;
   background-position: center center;
 
 }
-
 #poly {
   background:url(../images/collage.png);
   background-size:cover;
   background-position: center center;
 }
-
 #bad {
   background:url(../images/bad.png);
   background-size:cover;
   background-position: center center;
 }
-
 .img-container {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 .overlay {  
   background:rgba(0,0,0,.75);
   text-align:center;
@@ -171,30 +162,25 @@ hr {
   transition: opacity .25s ease;
   height: 100%;
 }
-
 .box:hover .overlay {
   opacity:1;
 }
-
 .plus {  
   font-family:Helvetica;
   font-weight:900;
   font-size:67px;
 }
-
 #poly>div>span>a {
   font-size: 56px;
   top: -10px;
   position: relative;
 }
-
 .plus>a:hover {
   color:#eee;
 }
 .plus>a {
   color:#fff;
 }
-
 a:link {
     text-decoration: none;
 }
@@ -207,7 +193,6 @@ a:hover {
 a:active {
     text-decoration: none;
 }
-
 .mail {
   color:#fff;
 }
@@ -243,7 +228,6 @@ a:active {
 .link:active {
   color:#888;
 }
-
 .come-in {
   transform: translateY(50px);
   animation: come-in 0.8s ease forwards, opacity 2s ease-in;
@@ -283,4 +267,7 @@ img {
 iframe {
   margin: 25px auto;
   display: block;
+  max-width:800px;
+  width: 100%;
+  max-height: 1030px;
 }
