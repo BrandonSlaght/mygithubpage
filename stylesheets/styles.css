@@ -265,6 +265,10 @@ img {
 }
 .navbar-nav>li>a {
   padding-top: 15px;
+  width: 69px;
+}
+.navbar-nav>li>.navbar-brand {
+  width: auto;
 }
 iframe {
   margin: 25px auto;
@@ -278,4 +282,19 @@ iframe {
 }
 .glyphicon {
   font:20px/1.5 Lato, 'Glyphicons Halflings', Helvetica, Arial, sans-serif;
+}
+@media (max-width: 420px) {
+
+   .nav>li>.navbar-brand{ 
+      font-size: 20px; 
+      padding-left: 7px;
+      padding-right: 7px;
+      white-space: nowrap;
+    }
+
+    .nav>li>a {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
 }
