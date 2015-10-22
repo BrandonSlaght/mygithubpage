@@ -255,7 +255,7 @@ img {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   float: none;
   margin: 0px !important;
 }
@@ -265,7 +265,6 @@ img {
 }
 .navbar-nav>li>a {
   padding-top: 15px;
-  width: 69px;
 }
 .navbar-nav>li>.navbar-brand {
   width: auto;
