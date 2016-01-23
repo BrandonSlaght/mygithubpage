@@ -22,6 +22,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery-photowall.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/normalize.css">
@@ -32,6 +33,98 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="javascripts/jquery-photowall.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        PhotoWall.init({
+            el:             '#gallery'               // Gallery element
+            ,zoom:          false                     // Use zoom
+            ,zoomAction:    'mouseenter'             // Zoom on action
+            ,zoomTimeout:   500                      // Timeout before zoom
+            ,zoomDuration:  100                      // Zoom duration time
+            ,showBox:       true                     // Enavle fullscreen mode
+            ,showBoxSocial: false                     // Show social buttons
+            ,padding:       10                       // padding between images in gallery
+            ,lineMaxHeight: 200                      // Max set height of pictures line
+                                                     // (may be little bigger due to resize to fit line)
+        });
+        /*
+            Photo object consist of:
+            {   // big image src,width,height and also image id
+                id:
+                ,img:       //src
+                ,width:
+                ,height:
+                ,th:{
+                    src:      //normal thumbnail src
+                    zoom_src: //zoomed normal thumbnail src
+                    zoom_factor: // factor of image zoom
+                    ,width:   //width of normal thumbnail
+                    ,height:  //height of normal thumbnail
+                }
+            };
+        */
+        var PhotosArray = new Array(
+            {
+              id:"1",img:'images/gal1.JPG',width:500,height:400,
+              th:
+              {
+                src:'images/tgal1.JPG',width:150,height:200
+              }
+            },
+            {
+              id:"2",img:'images/gal2.JPG',width:500,height:400,
+              th:
+              { 
+                src:'images/tgal2.JPG',width:266,height:200
+              }
+            },
+            {
+              id:"3",img:'images/gal3.JPG',width:500,height:400,
+              th:
+              {
+                src:'images/tgal3.JPG',width:266,height:200
+              }
+            },
+            {
+              id:"4",img:'images/gal5.JPG',width:500,height:400,
+              th:
+              {
+                src:'images/tgal5.JPG',width:150,height:200
+              }
+            },
+            {
+              id:"5",img:'images/gal4.JPG',width:500,height:400,
+              th:
+              {
+                src:'images/tgal4.JPG',width:266,height:200
+              }
+            },
+            {
+              id:"6",img:'images/gal6.JPG',width:500,height:400,
+              th:
+              {
+                src:'images/tgal6.JPG',width:266,height:200
+              }
+            },
+            {
+              id:"7",img:'images/gal7.JPG',width:500,height:400,
+              th:
+              {
+                src:'images/tgal7.JPG',width:266,height:200
+              }
+            },
+            {
+              id:"8",img:'images/gal8.JPG',width:500,height:400,
+              th:
+              {
+                src:'images/tgal8.JPG',width:266,height:200
+              }
+            }
+        );
+        PhotoWall.load(PhotosArray);
+      });
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -149,6 +242,14 @@
         <h3>Ohliger Long Term Care</h3>
         <a href="ohliger.com" class="link" target="_blank">Link</a>
         <p>Site for a local pharmacy.</p>
+      </div>
+      <hr>
+      <div class="container-fluid row animate">
+        <h2 class="text-center">Photography</h2>
+        <div id="gallery">
+          <div class="body">
+          </div>
+        </div>
       </div>
       <hr>
       <div class="container-fluid animate">
