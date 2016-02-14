@@ -246,13 +246,6 @@ a:active {
 @keyframes come-in {
   to { transform: translateY(0); }
 }
-img {
-  opacity:0;
-  -moz-transition: opacity 1s; /* Firefox 4 */
-  -webkit-transition: opacity 1s; /* Safari and Chrome */
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
-}
 @media (max-width: 768px) {
   ul {
     margin-bottom:0; 
@@ -292,17 +285,21 @@ iframe {
   font:20px/1.5 Lato, 'Glyphicons Halflings', Helvetica, Arial, sans-serif;
 }
 @media (max-width: 420px) {
-
-   .nav>li>.navbar-brand{ 
-      font-size: 20px; 
-      padding-left: 7px;
-      padding-right: 7px;
-      white-space: nowrap;
-    }
-
-    .nav>li>a {
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-
+  .nav>li>.navbar-brand{ 
+    font-size: 20px; 
+    padding-left: 7px;
+    padding-right: 7px;
+    white-space: nowrap;
+  }
+  .nav>li>a {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+#gallery {
+  max-width: 100%;
+}
+.center {
+  margin-right: auto;
+  margin-left: auto;
 }

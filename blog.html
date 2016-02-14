@@ -68,22 +68,49 @@
         Fading text on a DrawerLayout in Android
       </h2>
       <p>
-        Some applications, (notably, past versions of Spotify) have a drawerlayout which has the toolbar sitting above the drawer itself, so apps have the ability to display separate titles for both drawer states.  These can be set in the   method:
+        Some applications, (notably, past versions of Spotify) have a drawerlayout which has the toolbar sitting above the drawer itself, so apps have the ability to display separate titles for both drawer states.  Now, having different titles for the different drawer states can be trivially acvieved by setting them in the <code>ActionBarDrawerToggle</code> constructor:
+        <pre>
+        toggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar, R.string.title1, R.string.title2){...
+          @Override
+          public void onDrawerSlide(View drawerView, float slideOffset) {
+            super.onDrawerSlide(drawerView,slideOffset);
+            if(slideOffset > .50 && !isDrawerOpen){
+              toolbar.setTitle("Profile");
+              isDrawerOpen = true;
+            } else if(slideOffset <= .50 && isDrawerOpen) {
+              toolbar.setTitle("BandInsider");
+              isDrawerOpen = false;
+            }
+          }
+        };
+        </pre>
+        The float parameter passed in to the <code>onDrawerSlide</code> method is a number from 0.00 to 1.00 which represents the percent that the drawer is extended.  Here we change the title when the drawer is halfway open or closed.  However, this ends up looking pretty ugly when animated: 
       </p>
-      <p>
-        The parameter passed in to this method is a double from 0.00 to 1.00, which is the percent that the drawer is extended.  Here we change the title when the drawer is halfway open or closed.  However, this ends up looking pretty ugly when animated: 
-      </p>
+      <img src="images/no_fade_title.gif" class="center img-responsive">
       <p>
         Now here, a trick we can do is to change the opacity of the title so that it is transparent when the title changes.  We can whip up a quick math function that takes in a variable x, and gives values of 255 when x is 0 and 1, and gives a value of 0 when x is 0.5 (halfway open/closed):
       </p>
+      <img src="images/abs_function.png" class="center img-responsive">
       <p>
-        We can then use this in one line to set the opacity of the title text:
+        Of course, since we need a proper alpha value to set the title text color, we have to scale this function by 255:
+        <pre>
+          toolbar.setTitleTextColor(Color.argb((int)(255*(2*(Math.abs(.5-slideOffset)))),255,255,255));
+        </pre>
+        Here it is, implemented at the very end of our <code>onDrawerSlide</code> function:
       </p>
+      <img src="images/linear_fade_title.gif" class="center img-responsive">
       <p>
-        As you can see, this results in a much smoother animation.  However, it still seems a little jarring when viewed at a fast speed.  We can do better by constructing a parabolic curve instead of a linear one:
+        As you can see, having the title be completely transparent when it changes text results in a much smoother animation.  However, it still seems a little jarring when viewed at a fast speed.  We can do better by constructing a parabolic curve instead of a linear one:
       </p>
+      <img src="images/para_function.png" class="center img-responsive">
       <p>
-        Now the text animates very smoothly.  If anyone can come up with something better, like a bell curve, drop a comment!
+        <pre>
+          toolbar.setTitleTextColor(Color.argb((int)(255*(4*Math.pow(slideOffset-.5,2))),255,255,255));
+        </pre>
+      </p>
+      <img src="images/parabolic_fade_title.gif" class="center img-responsive">
+      <p>
+        Now the text animates very smoothly.  If anyone can come up with something better, like a bell curve, drop me an email!
       </p>
       <hr>
       <span class="label label-default">10/4/15</span>
