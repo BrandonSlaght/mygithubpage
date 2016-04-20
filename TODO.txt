@@ -3,4 +3,3 @@ site:
 ^ Switch up the fonts
 ^ Profile on picture feels weird, use more contrast, border or blur maybe 
 Make header image whiter? 
-Photorama.io - image carosel

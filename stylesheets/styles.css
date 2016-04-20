@@ -10,21 +10,33 @@ body {
 .row{
   margin: 0;
 }
-#blog {
-  background-image: url('../images/hacker-code.jpeg');
-  height: 300px; 
-  background-position: center 51px;
-}
 #resume {
-  background-image: url('../images/coding-desk.jpg');
+  background-image: url(../images/coding-desk.jpg);
   height: 300px; 
-  background-position: 50% 700px;
+  background-position: center 700px;
+  background-size: cover;
+}
+#projects {
+  background-image: url(../images/blueprint.png);
+  height: 300px; 
+  background-position: center center;
   background-size: cover;
 }
 #home {
-  background-image: url('../images/university-of-rochester-library.jpg');
+  background-image: url(../images/university-of-rochester-library.jpg);
   height: 500px; 
   background-position: center center;
+  background-size: cover;
+}
+#blog {
+  background-image: url(../images/hacker-code.jpeg);
+  height: 300px; 
+  background-position: center 51px;
+}
+#photography {
+  background-image: url(../images/parliament.jpg);
+  height: 500px; 
+  background-position: center bottom;
   background-size: cover;
 }
 .banner {
