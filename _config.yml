@@ -1,0 +1,17 @@
+gems:
+  - jekyll-seo-tag
+
+title:
+  Brandon Slaght's domain
+description:
+  Projects, pictures, and ramblings
+url:
+  http://brandonslaght.me/
+author:
+  Brandon Slaght
+facebook:
+  admins: 1259396344078220
+logo:
+  /images/brandon-slaght.jpg
+google_site_verification:
+  UeUsCdhhBtYxR7OwwNVShRses2zqfkmKHWBF83DI6tY
