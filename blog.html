@@ -420,7 +420,7 @@ toggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar, R.string.title
       <p>
         Of course, since we need a proper alpha value to set the title text color, we have to scale this function by 255:
         <pre>
-          toolbar.setTitleTextColor(Color.argb((int)(255*(2*(Math.abs(.5-slideOffset)))),255,255,255));
+toolbar.setTitleTextColor(Color.argb((int)(255*(2*(Math.abs(.5-slideOffset)))),255,255,255));
         </pre>
         Here it is, implemented at the very end of our <code>onDrawerSlide</code> function:
       </p>
@@ -431,7 +431,7 @@ toggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar, R.string.title
       <img src="images/para_function.png" class="center img-responsive">
       <p>
         <pre>
-          toolbar.setTitleTextColor(Color.argb((int)(255*(4*Math.pow(slideOffset-.5,2))),255,255,255));
+toolbar.setTitleTextColor(Color.argb((int)(255*(4*Math.pow(slideOffset-.5,2))),255,255,255));
         </pre>
       </p>
       <img src="images/parabolic_fade_title.gif" class="center img-responsive">
