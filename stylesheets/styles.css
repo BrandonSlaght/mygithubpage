@@ -176,6 +176,9 @@ hr {
   background-size:cover;
   background-position: center center;
 }
+.img-responsive {
+  margin: 0 auto;
+}
 .img-container {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -288,7 +291,10 @@ a:active {
   font-size: 24px;
 }
 .navbar-nav>li>a {
+  height: 100%;
+  text-align: center;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 .navbar-nav>li>.navbar-brand {
   width: auto;
@@ -317,6 +323,9 @@ iframe {
     padding-left: 7px;
     padding-right: 7px;
   }
+}
+@media (min-width: 768px) {
+
 }
 #gallery {
   max-width: 100%;
