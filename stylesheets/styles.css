@@ -75,6 +75,7 @@ body {
   overflow:hidden;
   width: 105px;
   height: 45px;
+  transition: all 0.1s;
 }
 .btn-github:active, .btn-github:focus, .btn-github:hover{
   background-color: #111;
@@ -87,6 +88,7 @@ body {
   position:absolute;
   right:0px;
   top:0px;
+  transition: all 0.1s;
 }
 .btn-github>a:hover {
   color:#eee;
@@ -98,6 +100,7 @@ body {
   overflow:hidden;
   width: 105px;
   height: 45px;
+  transition: all 0.1s;
 }
 .btn-linkedin:active, .btn-linkedin:focus, .btn-linkedin:hover{
   background-color: #005e93;
@@ -110,6 +113,7 @@ body {
   position:absolute;
   right:0px;
   top:0px;
+  transition: all 0.1s;
 }
 .btn-linkedin>a:hover {
   color:#eee;
@@ -172,6 +176,9 @@ hr {
   background-size:cover;
   background-position: center center;
 }
+.img-responsive {
+  margin: 0 auto;
+}
 .img-container {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -184,6 +191,7 @@ hr {
   -moz-transition: opacity .25s ease;
   transition: opacity .25s ease;
   height: 100%;
+  border-radius:5px;
 }
 .box:hover .overlay {
   opacity:1;
@@ -204,6 +212,9 @@ hr {
 .plus>a {
   color:#fff;
 }
+a {
+  transition: all 0.1s;
+}
 a:link {
     text-decoration: none;
 }
@@ -218,6 +229,7 @@ a:active {
 }
 .mail {
   color:#fff;
+  transition: all 0.1s;
 }
 .mail:hover {
   color:#bbb;
@@ -238,6 +250,7 @@ a:active {
 }
 .link {
   color: #999;
+  transition: all 0.1s;
 }
 .link:hover {
   color:#777;
@@ -278,7 +291,10 @@ a:active {
   font-size: 24px;
 }
 .navbar-nav>li>a {
+  height: 100%;
+  text-align: center;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 .navbar-nav>li>.navbar-brand {
   width: auto;
@@ -307,6 +323,9 @@ iframe {
     padding-left: 7px;
     padding-right: 7px;
   }
+}
+@media (min-width: 768px) {
+
 }
 #gallery {
   max-width: 100%;
