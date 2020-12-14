@@ -78,7 +78,7 @@ body {
 	height: 45px;
 	transition: all 0.1s;
 }
-.btn-github:active, .btn-github:focus, .btn-github:hover{
+.btn-github:active, .btn-github:focus, .btn-github:hover, .btn-github:active:focus, .btn-github:active:hover{
 	background-color: #111;
 	border-color: #666;
 }
@@ -103,7 +103,7 @@ body {
 	height: 45px;
 	transition: all 0.1s;
 }
-.btn-linkedin:active, .btn-linkedin:focus, .btn-linkedin:hover{
+.btn-linkedin:active, .btn-linkedin:focus, .btn-linkedin:hover, .btn-linkedin:active:focus, .btn-linkedin:active:hover{
 	background-color: #005e93;
 	border-color: #004471;
 }
