@@ -1,4 +1,4 @@
-# My Github-hosted page
+# My GitHub-hosted page
 
 [![CodeFactor](https://www.codefactor.io/repository/github/brandonslaght/.me/badge)](https://www.codefactor.io/repository/github/brandonslaght/.me)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/BrandonSlaght/.me/graphs/commit-activity)
