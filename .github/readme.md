@@ -5,6 +5,6 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs%3F-welcome-green.svg)](https://github.com/BrandonSlaght/.me/blob/master/.github/contributing.md)
 [![Website brandonslaght.github.io](https://img.shields.io/website-up-down-green-red/https/brandonslaght.me.svg)](https://brandonslaght.me)
 
-[brandonslaght.me](https://www.brandonslaght.me, "Link to my personal web site.")  
+[brandonslaght.me](https://www.brandonslaght.me "Link to my personal web site.")  
 
 Hosted via GitHub Pages
