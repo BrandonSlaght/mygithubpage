@@ -7,4 +7,4 @@
 
 [brandonslaght.me](https://www.brandonslaght.me "Link to my personal web site.")  
 
-Hosted via GitHub Pages
+Feel free to use this as a template if you give credit. Hosted via GitHub Pages
