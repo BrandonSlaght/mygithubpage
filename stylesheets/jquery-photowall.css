@@ -55,7 +55,7 @@ img.pw-photo-zoomed {
 #showbox-exit {
     width:16px;
     height:16px;
-    background: url(../images/exit.gif);
+    background: url(../../images/exit.gif);
     position:absolute;
     right:10px;
     top:10px;
@@ -68,7 +68,7 @@ img.pw-photo-zoomed {
     left:50%;
     width: 16px;
     height: 16px;
-    background: #000 url(../images/loader.gif);
+    background: #000 url(../../images/loader.gif);
     margin:-80px 0 0 -8px;
 }
 #showbox .showbox-image {
@@ -99,7 +99,7 @@ img.pw-photo-zoomed {
 #showbox .showbox-pv-lock {
     width:13px;
     height:9px;
-    background: url(../images/lock.gif);
+    background: url(../../images/lock.gif);
     position:absolute;
     right:10px;
     top:10px;
