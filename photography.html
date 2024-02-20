@@ -76,366 +76,323 @@
 					,zoomAction:    'mouseenter'             // Zoom on action
 					,zoomTimeout:   500                      // Timeout before zoom
 					,zoomDuration:  100                      // Zoom duration time
-					,showBox:       true                     // Enavle fullscreen mode
+					,showBox:       true                     // Enable fullscreen mode
 					,showBoxSocial: false                    // Show social buttons
-					,padding:       10                       // padding between images in gallery
+					,padding:       5                        // padding between images in gallery
 					,lineMaxHeight: 320                      // Max set height of pictures line
-					// (may be little bigger due to resize to fit line)
 				});
-				/*
-				 Photo object consist of:
-				 {   // big image src,width,height and also image id
-				 id:
-				 ,img:       //src
-				 ,width:
-				 ,height:
-				 ,th:{
-				 src:      //normal thumbnail src
-				 zoom_src: //zoomed normal thumbnail src
-				 zoom_factor: // factor of image zoom
-				 ,width:   //width of normal thumbnail
-				 ,height:  //height of normal thumbnail
-				 }
-				 };
-				 */
-				//For example one of my gallery at Picasa
-				/*$.ajax({
-				 headers: {
-				 'Authorization': 'Client-ID 6a6e3ee334e8d17'
-				 },
-				 url: 'https://api.imgur.com/3/album/qMB4r',
-				 dataType: 'json',
-				 success: function(data){
-				 var photos = {}
-				 if(!data.data.images) console.log("no data.images");
-				 for(var i in data.data.images) {
-				 var e     = data.data.images[i];
-				 var id    = e.id;
-				 var bsrc  = e.link;
-				 var bw    = e.width;
-				 var bh    = e.height;
-				 var t1h   = 320;
-				 var t1w   = Math.round(320*(bw/bh));
-				 var t1src = e.link.slice(0,-4)+"l.jpg";
-				 var t2w   = 640;
-				 var t2h   = Math.round(640*(bw/bh));
-				 var t2src = e.link.slice(0,-4)+"h.jpg";
-				 photos[id] = {id:id,img:bsrc,width:bw,height:bh,th:{src:t1src,width:t1w,height:t1h,zoom_src:t2src,zoom_factor:1.5}};
-				 }
-				 }
-				 });*/
-
+				
 				var photos = new Array(
 					{
 						id:'1',
 						img:'images/gallery/full/image_.1jpeg',
-						width:500,
-						height:400,
+						width:3024,
+						height:4032,
 						th: {
 							src:'images/gallery/thumbnails/image_1.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_1.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'2',
 						img:'images/gallery/full/image_2.jpeg',
-						width:500,
-						height:400,
+						width:4032,
+						height:3024,
 						th: {
 							src:'images/gallery/thumbnails/image_2.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_2.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'3',
 						img:'images/gallery/full/image_3.jpeg',
-						width:500,
-						height:400,
+						width:4032,
+						height:3024,
 						th: {
 							src:'images/gallery/thumbnails/image_3.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_3.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'4',
 						img:'images/gallery/full/image_4.jpeg',
-						width:500,
-						height:400,
+						width:5568,
+						height:4872,
 						th: {
 							src:'images/gallery/thumbnails/image_4.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_4.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'5',
 						img:'images/gallery/full/image_5.jpeg',
-						width:500,
-						height:400,
+						width:4032,
+						height:3024,
 						th: {
 							src:'images/gallery/thumbnails/image_5.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_5.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'6',
 						img:'images/gallery/full/image_6.jpeg',
-						width:500,
-						height:400,
+						width:4032,
+						height:3024,
 						th: {
 							src:'images/gallery/thumbnails/image_6.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_6.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'7',
 						img:'images/gallery/full/image_7.jpeg',
-						width:500,
-						height:400,
+						width:4032,
+						height:3024,
 						th: {
 							src:'images/gallery/thumbnails/image_7.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_7.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'8',
 						img:'images/gallery/full/image_8.jpeg',
-						width:500,
-						height:400,
+						width:4032,
+						height:3024,
 						th: {
 							src:'images/gallery/thumbnails/image_8.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_8.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'9',
 						img:'images/gallery/full/image_9.jpeg',
-						width:500,
-						height:400,
+						width:4032,
+						height:3024,
 						th: {
 							src:'images/gallery/thumbnails/image_9.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_9.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'10',
 						img:'images/gallery/full/image_10.jpeg',
-						width:500,
-						height:400,
+						width:4032,
+						height:3024,
 						th: {
 							src:'images/gallery/thumbnails/image_10.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_10.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'11',
 						img:'images/gallery/full/image_11.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_11.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_11.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'12',
 						img:'images/gallery/full/image_12.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_12.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_12.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'13',
 						img:'images/gallery/full/image_13.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_13.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_13.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'14',
 						img:'images/gallery/full/image_14.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_14.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_14.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'15',
 						img:'images/gallery/full/image_15.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_15.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_15.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'16',
 						img:'images/gallery/full/image_16.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_16.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_16.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'17',
 						img:'images/gallery/full/image_17.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_17.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_17.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'18',
 						img:'images/gallery/full/image_18.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_18.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_18.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'19',
 						img:'images/gallery/full/image_19.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_19.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_19.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'20',
 						img:'images/gallery/full/image_20.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_20.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_20.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'21',
 						img:'images/gallery/full/image_21.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_21.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_21.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'22',
 						img:'images/gallery/full/image_22.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_22.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_22.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'23',
 						img:'images/gallery/full/image_23.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_23.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_23.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					},
 					{
 						id:'24',
 						img:'images/gallery/full/image_24.jpeg',
-						width:500,
-						height:400,
+						width:4608,
+						height:3456,
 						th: {
 							src:'images/gallery/thumbnails/image_24.jpeg',
 							width:50,
 							height:40,
 							zoom_src:'images/gallery/thumbnails/image_24.jpeg',
-							zoom_factor:4
+							zoom_factor:1.5
 						}
 					}
 				);
