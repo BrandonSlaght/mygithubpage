@@ -326,7 +326,7 @@ iframe {
 		padding-right: 7px;
 	}
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	.home-nav {
 		order: -1;
 	}
