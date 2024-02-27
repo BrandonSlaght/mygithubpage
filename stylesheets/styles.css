@@ -286,7 +286,6 @@ a:active {
 	justify-content: center;
 	float: none;
 	margin: 0px !important;
-	overflow-x: scroll;
 }
 .navbar-brand {
 	margin-left: 0px !important;
@@ -329,6 +328,12 @@ iframe {
 @media (max-width: 768px) {
 	.home-nav {
 		order: -1;
+	}
+	.navbar-nav {
+		justify-content: left;
+	}
+	.navbar {
+		overflow-x: scroll;
 	}
 }
 #gallery {
