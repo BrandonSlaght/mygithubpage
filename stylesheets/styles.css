@@ -282,10 +282,11 @@ a:active {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: center;
-			-ms-flex-pack: center;
-					justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	float: none;
 	margin: 0px !important;
+	overflow-x: scroll;
 }
 .navbar-brand {
 	margin-left: 0px !important;
@@ -314,8 +315,8 @@ iframe {
 	font:20px/1.5 Lato, 'Glyphicons Halflings', Helvetica, Arial, sans-serif;
 }
 @media (max-width: 420px) {
-	.nav>li>.navbar-brand{ 
-		font-size: 20px; 
+	.nav>li>.navbar-brand {
+		font-size: 20px;
 		padding-left: 7px;
 		padding-right: 7px;
 		white-space: nowrap;
@@ -326,7 +327,9 @@ iframe {
 	}
 }
 @media (min-width: 768px) {
-
+	.home-nav {
+		order: -1;
+	}
 }
 #gallery {
 	max-width: 100%;
